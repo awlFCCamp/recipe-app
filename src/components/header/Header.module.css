@@ -1,0 +1,40 @@
+.header {
+  --primary-color: 24, 69%;
+  --l: 53%;
+  --color: hsl(var(--primary-color), var(--l));
+  background-color: var(--color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+}
+
+.title {
+  margin-left: 3rem;
+  font-size: 1.1rem;
+}
+.link {
+  outline: none;
+  border: none;
+  background: none;
+  color: #fff;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.link:hover {
+  background: #fff;
+  --primary-color: 24, 69%;
+  --l: 53%;
+  --color: hsl(var(--primary-color), var(--l));
+  color: var(--color);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btns {
+  margin-right: 2rem;
+}
