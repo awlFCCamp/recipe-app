@@ -22,6 +22,15 @@ const NewRecipeScreen = () => {
     },
     onSubmit: (values) => {
       values.ingredients = ingredients;
+      axios
+        .post(`https://recipes.devmountain.com/recipes`, values)
+        .then((res) => {
+          console.log(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
       console.log(values);
     },
   });
